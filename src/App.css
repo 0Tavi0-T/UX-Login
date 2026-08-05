@@ -1,0 +1,122 @@
+/* Reset básico e centralização na tela */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f6f9; /* Fundo neutro e suave para não cansar os olhos */
+  font-family: sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* O cartão de login */
+.login-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra suave profissional */
+  width: 100%;
+  max-width: 400px; /* Evita que o formulário estique demais em telas grandes */
+}
+
+/* Cabeçalho */
+.login-header h2 {
+  margin: 0 0 8px 0;
+  color: #1a1a1a;
+  font-size: 24px;
+}
+
+.login-header p {
+  margin: 0 0 24px 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+/* Formulário e Grupos de Input */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espaçamento consistente entre os campos */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilização padrão dos Inputs */
+.input-group input {
+  padding: 12px 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out; /* Transição suave para os estados */
+  outline: none;
+}
+
+/* 🎯 PSEUDO-CLASSE :FOCUS (UX de Acessibilidade) */
+.input-group input:focus {
+  border-color: #4f46e5; /* Azul/Roxo moderno indicando atividade */
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15); /* "Halo" de foco visível */
+}
+
+/* Links */
+.forgot-password, .login-footer a {
+  font-size: 13px;
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot-password:hover, .login-footer a:hover {
+  text-decoration: underline; /* Feedback visual ao passar o mouse em links */
+}
+
+/* Botão de Enviar */
+.btn-submit {
+  background-color: #4f46e5;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+
+/* 🎯 PSEUDO-CLASSE :HOVER (UX de Interação no botão) */
+.btn-submit:hover {
+  background-color: #4338ca; /* Tom mais escuro indicando clique iminente */
+}
+
+/* 🎯 PSEUDO-CLASSE :FOCUS NO BOTÃO (Para navegação por teclado) */
+.btn-submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.4);
+}
+
+/* Rodapé */
+.login-footer {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+}
